@@ -1,36 +1,256 @@
 /* Import of the fonts you want to have */
 @import url('https://fonts.googleapis.com/css2?family=Phudu:wght@300;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+*{
+      /*Declare the colors on the website with variables */
+      --one: #026873;
+
+      --two: #0596a6;
+
+      --three: #03a6a6;
+
+      --four: #222d38;
+
+      --five: #dad3c8;
+
+      --black: black;
+
+      --six: #726651;
+
+      --white: #ffffff;
+
+
+}
+
+
 /* Description */
 /* 1. html,body settings plus colors, fonts */
-
-
-
-
+/* 2. Buttons */
+/* 3. Navbar */
+/* 4. Hero Image Section */
+/* 5. Grid Area */
 
 /* 1. html,body settings plus colors, fonts */
 html,
 body {
+
+
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    background-color: var(--five);
 
-    /*Declare the colors on the website with variables */
-    --one: #026873;
 
-    --two: #0596a6;
+}
 
-    --three: #03a6a6;
+/* 2. Buttons */
+button.btn {
+    border: none;
+    background-color: var(--six);
+    /* border radius to make a smoother feeling */
+    border-radius: 8px;
+    color: var(--white);
+    font-size: 1.2rem;
+    padding: 13px 32px;
+    cursor: pointer;
+    margin-top: 5vh;
+}
 
-    --four: #222d38;
+button.btn:hover {
+    background-color: var(--six);
+    color: var(--four);
+    font-weight: 400;
+}
 
-    --five: #dad3c8;
+/* 3. Navbar */
+/* Changeing backround color */
+.navbar {
+    background-color: var(--four);
+}
+/* Changeing logo text */
 
-    --black: black;
+a.navbar-brand {
+    color: white;
+}
 
-    --six: #726651;
+/* Removing existing bootstrap pre-build css hover effect */
 
-    --white: #ffffff;
+a.navbar-brand:hover {
+    color: white;
+}
+
+/* Adjusting the links to the right with flexbox since bootstrap is made by flex */
+#navbarNav {
+    justify-content: flex-end;
+}
+
+/* Color white on links */
+a.nav-link {
+    color: var(--white);
+}
+
+a.nav-link:hover {
+    color: var(--five);
+    text-decoration: underline;
+}
+
+/* Adjusting hamburger nav for mobile view */
+button.navbar-toggler {
+    background-color: white;
+    color: var(--four); /* Tack Theo */
+}
+
+/* 4. Hero Image Section */
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(/img/hus1.jpg);
+    height: 120vh; /* media query is needed */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+/* Center text in middle with pure css, without flex and it is
+responsive whatever screen we show it in */
+.hero-text {
+    color: var(--white);
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+/* usp text */
+#usp-text {
+    margin-top: 5vh;
+}
+
+.hero-image .btn {
+}
+
+/* 5. Grid Area */
+.testimonials-grid-container {
+    display: grid;
+    /* First we declare the columns, specifies the size of the columns, and how many columns in the grid layout */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /*  Next we declare the rows, specifies the size of the rows in a grid layout*/
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    margin-top: 5vh;
+    height: auto;
+    margin-left: 10vw;
+    margin-right: 10vw;
+
+
+/* Where do i want each block to be?, how many rows will be used?
+Specifies how to display columns and rows, using NAMED GRID ITEMS */
+grid-template-areas:
+"comment comment comment2 comment2"
+"comment4 comment4 comment3 comment3"
+
+}
+
+/* working with each "item" in the grid */
+#comment{
+    grid-area: comment;
+    border-radius: 8px;
+    background-image: url(img/family.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 53vh;
+}
+
+#comment2{
+    grid-area: comment2;
+    border-radius: 8px;
+    background-color: var(--three);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+    padding-top:20px;
+
+}
+
+#comment2 h2{
+    width: 80%;
+    margin:auto;
+    padding:3vh;
+}
+
+#comment2 p{
+    width: 80%;
+    margin:auto;
+
+}
+
+#comment3{
+    grid-area: comment3;
+    border-radius: 8px;
+    background-image: url(img/office-820390_1920.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 53vh;
+}
+
+#comment4{
+    grid-area: comment4;
+    border-radius: 8px;
+    background-color: var(--three);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+    padding-top:20px;
+
+}
+
+#comment4 h2{
+    width: 80%;
+    margin:auto;
+    padding:3vh;
+}
+
+#comment4 p{
+    width: 80%;
+    margin:auto;
+
+}
+
+/* Grid Area Responsive settings */
+@media only screen and (max-width:550px){
+    .testimonials-grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr;
+        row-gap: 5vh;
+        grid-template-areas:
+        "comment"
+        "comment2"
+        "comment3"
+        "comment4"
+    }
+    #comment4{
+        height:80vh;
+    }
+    #comment3{
+        height:50vh;
+    }
+    #comment2{
+        height:80vh;
+    }
+
 }
