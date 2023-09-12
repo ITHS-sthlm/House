@@ -12,9 +12,8 @@
 html,
 body {
     margin: 0;
-    margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow-x: hidden;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 
