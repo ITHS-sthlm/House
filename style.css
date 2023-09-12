@@ -3,7 +3,15 @@
 
 html, body{
 
- /*Declare the colors on the website */
+    /* Standard Settings */
+
+    margin: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+
+ /*Declare the colors on the website with variables */
   --one: #026873;
 
   --two: #0596a6;
