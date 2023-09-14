@@ -99,32 +99,9 @@
             </div>
         </section>
         <!-- End of Grid Area -->
-        <!-- Flex Area -->
-        <!-- <div class="container" id="flex-example">
-        <div class="row">
-            <div class="col ">
-                <img id="image" src="/img/jonas-leupe-wlrmQa7Hli8-unsplash.jpg" alt="1">
-            </div>
-            <div class="col">
-                <div id="item4">
-                    <h2>En husleverantör med stark framtidsvision</h2>
-                    <p>
-                        Vilket är ert drömhus?<br />
-                        En ny bostad i villakvarteret, ett fjällhus mitt i
-                        skidbacken, ett sommarhus i skärgården eller kanske ett
-                        attefallshus för uthyrning?<br />
-                        Vilket är ert drömhus?<br />
-                        En ny bostad i villakvarteret, ett fjällhus mitt i
-                        skidbacken, ett sommarhus i skärgården eller kanske ett
-                        attefallshus för uthyrning?
-                    </p>
-                </div>
-            </div>
-          </div>
-        </div> -->
-        <!-- End of Flex Area -->
-         <!-- Grid Area 2-->
-         <section class="testimonials-grid-container">
+       
+        <!-- Grid Area 2-->
+        <section class="testimonials-grid-container">
             <div id="item5"></div>
             <div id="item6">
                 <h2>En husleverantör med stark framtidsvision</h2>
@@ -155,6 +132,45 @@
             </div>
         </section>
         <!-- End of Grid Area2 -->
+        <!-- Contact Form -->
+        <section class="title">
+            <h1>Att fråga är gratis</h1>
+        </section>
+        <section class="form" id="form">
+            <div class="container">
+                <form action="action_page.php" method="post">
+                    <label for="fname">Förnamn</label>
+                    <input
+                        type="text"
+                        id="fname"
+                        name="firstname"
+                        placeholder="Ditt förnamn..."
+                    />
+                    <label for="lname">Efternamn</label>
+                    <input
+                        type="text"
+                        id="lname"
+                        name="lastname"
+                        placeholder="Ditt Efternamn..."
+                    />
+                    <label for="country">Land</label>
+                    <select name="contry" id="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+                    <textarea
+                        placeholder="Skriv dina frågor här.."
+                        name="subject"
+                        id="subject"
+                        style="height: 20vh"
+                    >
+                    </textarea>
+                    <input type="submit" value="Skicka" />
+                </form>
+            </div>
+        </section>
+        <!-- End Contact Form -->
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"

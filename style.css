@@ -29,7 +29,7 @@
 /* 3. Navbar */
 /* 4. Hero Image Section */
 /* 5. Grid Area */
-/* 6. Flex Area */
+/* 6. Form */
 
 /* 1. html,body settings plus colors, fonts */
 html,
@@ -329,34 +329,42 @@ grid-template-areas:
 
 }
 
-/* 6. Flex Area */
-/*
-#image{
+/* 6. Form */
+.title{
+    display: flex;
+    justify-content: center;
+    margin-top: 20vh;
+}
 
-    width: 39vw;
+.container{
     border-radius: 8px;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+
 }
 
-#flex-example{
-    display:flex;
-    margin-top: 10vh;
-    margin-left: 9vw;
-    margin-right: 10vw;
-}
- */
-/* #flex-container{
-    margin-top: 10vh;
-    margin-left: 10vw;
-    margin-right: 10vw;
+input[type=text], select, textarea{
+    width: 100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    resize: vertical;
 }
 
-#flex-container .col{
-    height:80vh;
+input[type=submit]{
+    background-color: #03a6a6;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+
+}
+
+input[type=submit]:hover{
+    background-color: green;
 
 
-} */
-/* .col img{
-    height: 50vh;
-    border-radius: 8px;
-    width: 50vw;
-} */
+}
