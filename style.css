@@ -37,11 +37,11 @@
 html,
 body {
     margin: 0;
-    padding: 0;
+    padding: 1;
     overflow-x: hidden;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    
+
 
 }
 
