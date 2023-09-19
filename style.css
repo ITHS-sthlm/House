@@ -20,6 +20,8 @@
       --white: #ffffff;
 
 
+
+
 }
 
 
@@ -34,17 +36,16 @@
 /* 1. html,body settings plus colors, fonts */
 html,
 body {
-
-
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    background-color: var(--five);
-
+    
 
 }
+
+
 
 /* 2. Buttons */
 button.btn {
@@ -134,8 +135,6 @@ responsive whatever screen we show it in */
     margin-top: 5vh;
 }
 
-.hero-image .btn {
-}
 
 /* 5. Grid Area */
 .testimonials-grid-container {
@@ -368,3 +367,80 @@ input[type=submit]:hover{
 
 
 }
+
+
+/*Footer Grid Container*/
+.Grid__Container {
+    display: grid;
+    margin-top: 40vh;
+    /* 2 columns for smaller screens */
+    grid-template-columns: repeat(2, 1fr);
+    height: 40vh;
+    background-color: var(--four);
+
+
+
+  }
+
+  #footer1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top:5vh;
+
+
+  }
+  #footer2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top:5vh;
+
+
+
+  }
+  #footer3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top:5vh;
+
+
+
+  }
+  #footer4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top:5vh;
+
+
+
+  }
+
+  .Bottom_Column {
+    /* The bottom "row" should span the 2 columns on smaller screens */
+    grid-column: span 2 / span 2;
+    background-color: var(--four);
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top:20vh;
+
+
+  }
+
+  @media (min-width: 768px) {
+    .Grid__Container {
+      /* 4 columns for larger screens */
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .Bottom_Column {
+      /* The bottom "row" should span the 4 columns on larger screens */
+      grid-column: span 4;
+    }
+  }
